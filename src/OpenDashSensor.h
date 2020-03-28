@@ -24,7 +24,7 @@ template<typename T> class OpenDashSensor
     {
         _value = value;
     }
-    void GetJson(char* json, char* ms, char* openDashUserName)
+    void GetJson(char* json, char* ms, const char* openDashUserName)
     {
         DynamicJsonDocument doc(500);
         

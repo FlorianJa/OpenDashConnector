@@ -36,7 +36,8 @@ class OpenDashConnector
             configTime(TZ_SEC, DST_SEC, "pool.ntp.org");
 
             SetupWiFiManager();
-                        
+            randomSeed(micros());
+            
             _client = PubSubClient (_wiFiClient);
             _client.setServer(_mqttServerAddress, _mqttPort);
             

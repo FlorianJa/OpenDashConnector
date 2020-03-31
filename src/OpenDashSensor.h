@@ -6,7 +6,10 @@
 
 typedef enum {
         NUMBER,
-        BOOL
+        BOOL,
+        STRING,
+        OBJECT,
+        GEO
     }
     OPENDASH_TYPE;
 
@@ -41,6 +44,15 @@ template<typename T> class OpenDashSensor
                 case BOOL:
                     strncpy(_type, "Bool", 7);
                     break;
+                case STRING:
+                    strncpy(_type, "String", 7);
+                    break; 
+                case OBJECT:
+                    strncpy(_type, "Object", 7);
+                    break; 
+                case GEO:
+                    strncpy(_type, "Geo", 7);
+                    break;        
                 default:
                     break;
             }

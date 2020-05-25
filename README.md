@@ -12,6 +12,9 @@ See the src/main.cpp for example.
 The [WiFiManager](https://github.com/tzapu/WiFiManager) will create an AP if no WiFi credentials are stored in EEPROM or if the stored WiFi is not available. When connecting to this AP, there is a web-interface to insert all important data.
 Stored data can be reset with the reset pin (high-active).
 
+![WifiManager](https://github.com/FlorianJa/OpenDashConnector/blob/master/WiFiManager.png)
+
+
 ### Creating an OpenDashSensor:
 `OpenDashSensor<TYPE> Temperature = OpenDashSensor<TYPE>("TESTID","TEST TEMPERATUR","Temperatur","°C", OPENDASH_TYPE::NUMBER,"MQTT/TOPIC");`
 
